@@ -21,7 +21,10 @@ pmd是基於python和cmd的命令提示符。
 
 python3
 
-## 使用
+## 使用方法
+
+python pmd.py 來執行。   
+當然你也可以使用pyinstaller来生成可執行檔。
 
 1. 輸入python表達式來得到結果
 2. 輸入python語句來執行 
