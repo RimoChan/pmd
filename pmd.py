@@ -1,6 +1,7 @@
 import os
 import shlex
 
+
 import 光標
 os.system('title pmd')
 
@@ -14,7 +15,7 @@ def 跑命令(字串):
     首=a[0]
     if 首 in dir(命令):
         try:
-            m(*a[1:])
+            eval('命令.%s'%首)(*a[1:])
         except BaseException as e:
             print(e)
     elif os.path.isfile(首) and 首.split('.')[-1]=='py':            
