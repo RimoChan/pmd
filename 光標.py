@@ -1,7 +1,10 @@
+import os 
 import ctypes
-a=ctypes.WinDLL('./cursor.dll')
 
+此處=os.path.dirname(os.path.abspath(__file__))
+a=ctypes.WinDLL(os.path.join(此處,'cursor.dll'))
 a.init()
+
 def 去頂():
     a.gotoH()
 
