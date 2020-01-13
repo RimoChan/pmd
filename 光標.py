@@ -1,5 +1,5 @@
 import ctypes
-a=ctypes.WinDLL('cursor.dll')
+a=ctypes.WinDLL('./cursor.dll')
 
 a.init()
 def 去頂():
